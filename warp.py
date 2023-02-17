@@ -6,8 +6,8 @@ import cv2
 import numpy as np
 import math
 
-img = cv2.imread("/home/howell/work/t-cv/01_Getting_Started_with_Images/car1.jpg", cv2.IMREAD_GRAYSCALE)
-rows, cols = img.shape
+img = cv2.imread("/home/howell/work/t-cv/01_Getting_Started_with_Images/car1.jpg", cv2.IMREAD_COLOR)
+rows, cols = img.shape[:2]
 
 img_out = np.zeros(img.shape, dtype=img.dtype)
 for i in range(rows):
